@@ -4,18 +4,18 @@ plugins {
 
 android {
     namespace "no.nordicsemi.android.log.example"
-    compileSdk = 34
+    compileSdk = 37
 
     defaultConfig {
         applicationId "no.nordicsemi.android.log.example"
         minSdk = 21
-        targetSdk = 34
+        targetSdk = 37
     }
 
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.txt'
         }
     }
     compileOptions {
