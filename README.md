@@ -39,7 +39,7 @@ APPLICATION level added in version 2.0 of the library.
 
 ### Timber integration
 After importing log-timber dependency, plant the 
-[nRFLoggerTree](https://github.com/NordicSemiconductor/nRF-Logger-API/blob/main/log-timber/src/main/java/no/nordicsemi/android/log/timber/nRFLoggerTree.java), 
+[nRFLoggerTree](https://github.com/nordicsemi/nRF-Logger-API/blob/main/log-timber/src/main/java/no/nordicsemi/android/log/timber/nRFLoggerTree.java), 
 as described on [Timber](https://github.com/JakeWharton/timber) website.
 
 #### Important
@@ -104,7 +104,7 @@ if the nRF Logger application is not installed. Local log database is a limited 
 in nRF Logger. It does not support multiple applications as the new provider is designed to work only 
 in one application. Also marking session with a flag/star or adding a description is not supported.
 
-To use the LocalLogContentProvider you must extend extend this class in you project and add its 
+To use the LocalLogContentProvider you must extend this class in you project and add its 
 definition to the *AndroidManifest.xml* file:
 ```xml
 <provider
@@ -113,7 +113,7 @@ definition to the *AndroidManifest.xml* file:
     android:exported="true" />
 ```        
 If you want to use the local logger in threads that are owned by other applications, e.g. by Bluetooth 
-scanner callbacks, you must set the **exported** attribute to *true*. Otherwise the Bluetooth application 
+scanner callbacks, you must set the **exported** attribute to *true*. Otherwise, the Bluetooth application 
 will not have the permission to add log events. You may also use **Handler** object to log in 
 UI thread of your application.
 
