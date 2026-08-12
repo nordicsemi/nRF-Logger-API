@@ -44,7 +44,9 @@
 		tools:ignore="AllowBackup">
         <activity
             android:name="no.nordicsemi.android.log.example.MainActivity"
-            android:exported="true" >
+            android:exported="true"
+            android:enableOnBackInvokedCallback="true"
+            tools:targetApi="33">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

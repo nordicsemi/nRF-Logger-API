@@ -32,11 +32,12 @@
 <resources>
 
     <!--
-        Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+        Base application theme. Uses Material 3 DayNight so the app follows the
+        system light/dark setting. Dark-specific overrides go in res/values-night.
     -->
-    <style name="AppBaseTheme" parent="@style/Theme.Material3.Light">
+    <style name="AppBaseTheme" parent="@style/Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">@color/nordicBlue</item>
+        <item name="colorOnPrimary">@android:color/white</item>
     </style>
 
     <!-- Application theme. -->
