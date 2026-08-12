@@ -1,0 +1,299 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Log</title>
+<link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../../ui-kit/ui-kit.min.js" defer></script></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../../../index.html" tabindex="1">
+                    nRF Logger
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">2.6.0
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":log/release">release</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":log/release" data-filter=":log/release">
+                                <span class="checkbox--icon"></span>
+                                release
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    nRF Logger
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="log::no.nordicsemi.android.log/LogContract.Log///PointingToDeclaration//-2128962106">
+  <div class="breadcrumbs"><a href="../../../index.html">log</a><span class="delimiter">/</span><a href="../../index.html">no.nordicsemi.android.log</a><span class="delimiter">/</span><a href="../index.html">LogContract</a><span class="delimiter">/</span><span class="current">Log</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Log</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":log/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">Log</a> : <a href="https://developer.android.com/reference/kotlin/android/provider/BaseColumns.html">BaseColumns</a>, <a href="../../../../log/no.nordicsemi.android.log/-log-contract/-log-columns/index.html">LogContract.LogColumns</a></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="tableheader">Types</h2>
+        <div class="table"><a data-name="-2144743841%2FClasslikes%2F-2128962106" anchor-label="Level" id="-2144743841%2FClasslikes%2F-2128962106" data-filterable-set=":log/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":log/release" data-filterable-set=":log/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-level/index.html"><span><span>Level</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2144743841%2FClasslikes%2F-2128962106"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":log/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-level/index.html">Level</a></div><div class="brief ">A helper class that contains predefined static level values: <ul><li><a href="-level/-d-e-b-u-g.html">DEBUG</a></li><li><a href="-level/-v-e-r-b-o-s-e.html">VERBOSE</a></li><li><a href="-level/-i-n-f-o.html">INFO</a></li><li><a href="-level/-a-p-p-l-i-c-a-t-i-o-n.html">APPLICATION</a></li><li><a href="-level/-w-a-r-n-i-n-g.html">WARNING</a></li><li><a href="-level/-e-r-r-o-r.html">ERROR</a></li></ul></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="-987413909%2FProperties%2F-2128962106" anchor-label="_COUNT" id="-987413909%2FProperties%2F-2128962106" data-filterable-set=":log/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":log/release" data-filterable-set=":log/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-application/index.html#-987413909%2FProperties%2F-2128962106"><span>_</span><wbr><span>COUNT</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-987413909%2FProperties%2F-2128962106"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":log/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-application/index.html#-987413909%2FProperties%2F-2128962106">_COUNT</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token operator"> = </span><span class="token string">"_count"</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1355719525%2FProperties%2F-2128962106" anchor-label="_ID" id="1355719525%2FProperties%2F-2128962106" data-filterable-set=":log/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":log/release" data-filterable-set=":log/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-application/index.html#1355719525%2FProperties%2F-2128962106"><span>_</span><wbr><span>ID</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1355719525%2FProperties%2F-2128962106"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":log/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-application/index.html#1355719525%2FProperties%2F-2128962106">_ID</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token operator"> = </span><span class="token string">"_id"</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="229566089%2FProperties%2F-2128962106" anchor-label="CONTENT_DIRECTORY" id="229566089%2FProperties%2F-2128962106" data-filterable-set=":log/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":log/release" data-filterable-set=":log/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-c-o-n-t-e-n-t_-d-i-r-e-c-t-o-r-y.html"><span>CONTENT_</span><wbr><span>DIRECTORY</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="229566089%2FProperties%2F-2128962106"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":log/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-c-o-n-t-e-n-t_-d-i-r-e-c-t-o-r-y.html">CONTENT_DIRECTORY</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token operator"> = </span><span class="token string">"log"</span></div><div class="brief ">The directory twig for session log entries.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1205223952%2FProperties%2F-2128962106" anchor-label="CONTENT_ITEM_TYPE" id="1205223952%2FProperties%2F-2128962106" data-filterable-set=":log/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":log/release" data-filterable-set=":log/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-c-o-n-t-e-n-t_-i-t-e-m_-t-y-p-e.html"><span>CONTENT_</span><wbr><span>ITEM_</span><wbr><span>TYPE</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1205223952%2FProperties%2F-2128962106"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":log/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-c-o-n-t-e-n-t_-i-t-e-m_-t-y-p-e.html">CONTENT_ITEM_TYPE</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token operator"> = </span><span class="token string">"vnd.android.cursor.item/no.nordicsemi.android.log.entry"</span></div><div class="brief ">The MIME type of <a href="../-session/-c-o-n-t-e-n-t_-u-r-i.html">CONTENT_URI</a> subdirectory of a single log entry.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1196489130%2FProperties%2F-2128962106" anchor-label="CONTENT_TYPE" id="1196489130%2FProperties%2F-2128962106" data-filterable-set=":log/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":log/release" data-filterable-set=":log/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-c-o-n-t-e-n-t_-t-y-p-e.html"><span>CONTENT_</span><wbr><span>TYPE</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1196489130%2FProperties%2F-2128962106"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":log/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-c-o-n-t-e-n-t_-t-y-p-e.html">CONTENT_TYPE</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token operator"> = </span><span class="token string">"vnd.android.cursor.dir/no.nordicsemi.android.log.enties"</span></div><div class="brief ">The MIME type of <a href="../-session/-c-o-n-t-e-n-t_-u-r-i.html">CONTENT_URI</a> providing a directory of log entries.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="782847205%2FProperties%2F-2128962106" anchor-label="DATA" id="782847205%2FProperties%2F-2128962106" data-filterable-set=":log/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":log/release" data-filterable-set=":log/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#782847205%2FProperties%2F-2128962106"><span><span>DATA</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="782847205%2FProperties%2F-2128962106"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":log/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="index.html#782847205%2FProperties%2F-2128962106">DATA</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token operator"> = </span><span class="token string">"data"</span></div><div class="brief ">The log entry data.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="759893383%2FProperties%2F-2128962106" anchor-label="LEVEL" id="759893383%2FProperties%2F-2128962106" data-filterable-set=":log/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":log/release" data-filterable-set=":log/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#759893383%2FProperties%2F-2128962106"><span><span>LEVEL</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="759893383%2FProperties%2F-2128962106"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":log/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="index.html#759893383%2FProperties%2F-2128962106">LEVEL</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token operator"> = </span><span class="token string">"level"</span></div><div class="brief ">Log entry level.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-718658357%2FProperties%2F-2128962106" anchor-label="SESSION_ID" id="-718658357%2FProperties%2F-2128962106" data-filterable-set=":log/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":log/release" data-filterable-set=":log/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-718658357%2FProperties%2F-2128962106"><span>SESSION_</span><wbr><span>ID</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-718658357%2FProperties%2F-2128962106"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":log/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="index.html#-718658357%2FProperties%2F-2128962106">SESSION_ID</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token operator"> = </span><span class="token string">"session_id"</span></div><div class="brief ">The session id.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1067604190%2FProperties%2F-2128962106" anchor-label="TIME" id="-1067604190%2FProperties%2F-2128962106" data-filterable-set=":log/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":log/release" data-filterable-set=":log/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1067604190%2FProperties%2F-2128962106"><span><span>TIME</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1067604190%2FProperties%2F-2128962106"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":log/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="index.html#-1067604190%2FProperties%2F-2128962106">TIME</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token operator"> = </span><span class="token string">"time"</span></div><div class="brief ">The time the log entry was saved.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="1483207239%2FFunctions%2F-2128962106" anchor-label="createUri" id="1483207239%2FFunctions%2F-2128962106" data-filterable-set=":log/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":log/release" data-filterable-set=":log/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create-uri.html"><span>create</span><wbr><span><span>Uri</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1483207239%2FFunctions%2F-2128962106"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":log/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="create-uri.html"><span class="token function">createUri</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">sessionId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/net/Uri.html">Uri</a></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="create-uri.html"><span class="token function">createUri</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">number<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/net/Uri.html">Uri</a></div><div class="brief ">Returns the <a href="https://developer.android.com/reference/kotlin/android/net/Uri.html">Uri</a> to log entries from session with given id.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>Copyright © 2022 - 2026 Nordic Semiconductor ASA. All Rights Reserved.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
