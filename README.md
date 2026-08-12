@@ -9,6 +9,10 @@ The logger may be used for debugging purposes, as LogCat is not always available
 
 nRF Logger is available for Android 4.2.* and newer.
 
+## Documentation
+
+API documentation is located [here](https://nordicsemi.github.io/nRF-Logger-API/html/index.html).
+
 ### Usage
 The nRF Logger API library is available on Maven Central repositories. 
 For Android Studio, add the following dependency to your component's *gradle.build.kts* file:
