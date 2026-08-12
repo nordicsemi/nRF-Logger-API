@@ -36,7 +36,6 @@ import java.util.Calendar;
 import no.nordicsemi.android.log.LogContract.Log.Level;
 import android.content.Context;
 import android.database.Cursor;
-import android.graphics.Color;
 import android.util.SparseIntArray;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -45,17 +44,21 @@ import android.widget.CursorAdapter;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
 
 public class LogAdapter extends CursorAdapter {
-	private static final SparseIntArray mColors = new SparseIntArray();
+	// Maps each log level to a color resource. The colors are theme-aware
+	// (see res/values/colors.xml and res/values-night/colors.xml) and are
+	// resolved against the current configuration in bindView().
+	private static final SparseIntArray mColorRes = new SparseIntArray();
 
 	static {
-		mColors.put(Level.DEBUG, 0xFF009CDE);
-		mColors.put(Level.VERBOSE, 0xFFB8B056);
-		mColors.put(Level.INFO, Color.BLACK);
-		mColors.put(Level.APPLICATION, 0xFF238C0F);
-		mColors.put(Level.WARNING, 0xFFD77926);
-		mColors.put(Level.ERROR, Color.RED);
+		mColorRes.put(Level.DEBUG, R.color.log_level_debug);
+		mColorRes.put(Level.VERBOSE, R.color.log_level_verbose);
+		mColorRes.put(Level.INFO, R.color.log_level_info);
+		mColorRes.put(Level.APPLICATION, R.color.log_level_application);
+		mColorRes.put(Level.WARNING, R.color.log_level_warning);
+		mColorRes.put(Level.ERROR, R.color.log_level_error);
 	}
 
 	public LogAdapter(@NonNull final Context context) {
@@ -82,7 +85,8 @@ public class LogAdapter extends CursorAdapter {
 
 		final int level = cursor.getInt(2 /* LEVEL */);
 		holder.data.setText(cursor.getString(3 /* DATA */));
-		holder.data.setTextColor(mColors.get(level));
+		final int colorRes = mColorRes.get(level, R.color.log_level_info);
+		holder.data.setTextColor(ContextCompat.getColor(context, colorRes));
 	}
 
 	@Override
