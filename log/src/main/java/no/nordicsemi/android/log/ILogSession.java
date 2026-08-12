@@ -37,6 +37,16 @@ import android.net.Uri;
 
 import androidx.annotation.NonNull;
 
+import no.nordicsemi.android.log.localprovider.LocalLogContentProvider;
+
+/**
+ * A base type for log session.
+ * <p>
+ * The log session may be either {@link LocalLogSession} or {@link LogSession} depending on whether
+ * the nRF Logger application is installed on the device.
+ * <p>
+ * Local log session requires {@link LocalLogContentProvider} to be declared in the application manifest.
+ */
 @SuppressWarnings("unused")
 public interface ILogSession {
 

@@ -42,10 +42,14 @@ import android.util.Log;
 import no.nordicsemi.android.log.localprovider.LocalLogContentProvider;
 
 /**
+ * A log session on the local content provider.
+ * <p>
  * If the nRF Logger application is not installed on the phone/tablet application may still use
- * the logger functionality with it's own provider. LocalLogSession is a limited version of
- * {@link LogSession}, it does not keep the application data.
+ * the logger functionality with its own provider. <code>LocalLogSession</code> offers a limited
+ * set of features comparing to {@link LogSession}, it does not keep the application data.
  * The local provider does not allow to mark sessions or add descriptions.
+ * <p>
+ * This requires {@link LocalLogContentProvider} to be declared in the application manifest.
  */
 @SuppressWarnings("unused")
 public class LocalLogSession implements ILogSession {
@@ -63,7 +67,7 @@ public class LocalLogSession implements ILogSession {
 	 * @param key
 	 *            the session key, which is used to group sessions
 	 * @param name
-	 *            the human readable session name
+	 *            the human-readable session name
 	 * @return the {@link LogContract} that can be used to append log entries or <code>null</code>
 	 * if MCP is not installed. The <code>null</code> value can be next passed to logging methods
 	 */

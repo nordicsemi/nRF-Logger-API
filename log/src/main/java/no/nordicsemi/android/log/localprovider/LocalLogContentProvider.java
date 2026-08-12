@@ -55,12 +55,16 @@ import no.nordicsemi.android.log.LogContract;
 import no.nordicsemi.android.log.localprovider.LocalLogDatabaseHelper.Tables;
 
 /**
- * If the nRF Logger application is not installed an app may use the LocalLogContentProvider to
- * show log entries locally, in the application. This provider is a limited version of the one
+ * The local log content provider.
+ * <p>
+ * If the nRF Logger application is not installed an app may use the {@link LocalLogContentProvider}
+ * to show log entries locally, in the application. This provider is a limited version of the one
  * in nRF Logger. It does not support different applications, marking log sessions with a star
- * of a flag nor giving them description. nRF Connect makes use of this provider if nRF Logger
- * is not installed. The log sessions are stored until user closes the connection to the device
- * and removed afterwards, but you may keep them and make your own log viewer in the application.
+ * of a flag nor giving them description. The log sessions are stored until user closes the connection
+ * to the device and removed, but you may keep them and make your own log viewer in the
+ * application.
+ * <p>
+ * nRF Connect makes use of this provider if nRF Logger is not installed.
  * <p>
  * Remember to add the {@code <provider>} tag to the <i>AndroidManifest.xml</i> file giving the
  * same authority as you will return in the derived class.

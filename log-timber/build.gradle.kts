@@ -32,3 +32,9 @@ dependencies {
     api(project(":log"))
     api(libs.timber)
 }
+
+dokka {
+    dokkaSourceSets.configureEach {
+        includes.from("Module.md")
+    }
+}

@@ -1,0 +1,10 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+
+module:log
+no.nordicsemi.android.log
+no.nordicsemi.android.log.annotation
+no.nordicsemi.android.log.localprovider
+module:log-timber
+no.nordicsemi.android.log.timber
+no.nordicsemi.android.log.timber.annotation

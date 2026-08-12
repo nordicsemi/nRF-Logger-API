@@ -1,0 +1,1 @@
+sourceset_dependencies = '{":log/release":[],":log-timber/release":[]}'
