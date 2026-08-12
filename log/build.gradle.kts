@@ -32,3 +32,9 @@ dependencies {
     // Required for @NonNull and @Nullable
     api(libs.androidx.annotation)
 }
+
+dokka {
+    dokkaSourceSets.configureEach {
+        includes.from("Module.md")
+    }
+}
