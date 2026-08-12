@@ -1,11 +1,11 @@
-name: Deploy to Nexus
+name: Deploy to Maven Central
 on:
   push:
     tags:
       - '*'
   workflow_dispatch:
 jobs:
-  deployAarsToNexus:
+  deployToMavenCentral:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
