@@ -257,7 +257,7 @@ public class Logger {
 	 *                    method. This may be <code>null</code>, than it does nothing.
 	 * @param description the new description or <code>null</code>.
 	 */
-	public static void setSessionDescription(@Nullable final LogSession session,
+	public static void setSessionDescription(@Nullable final ILogSession session,
 											 @Nullable final String description) {
 		if (session == null)
 			return;
@@ -285,7 +285,7 @@ public class Logger {
 	 *                This may be <code>null</code>, than it does nothing.
 	 * @param mark    the new mark. {@link #MARK_CLEAR} will clear the mark.
 	 */
-	public static void setSessionMark(@Nullable final LogSession session, @LogMark final int mark) {
+	public static void setSessionMark(@Nullable final ILogSession session, @LogMark final int mark) {
 		if (session == null)
 			return;
 
