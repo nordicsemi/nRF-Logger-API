@@ -54,7 +54,7 @@ import no.nordicsemi.android.log.annotation.LogMark;
  * <p>
  * To use a logger you must first create a logger session. Log entries can be then appended to
  * the session. Session has 2 parameters: a non-changeable key, which can be e.g. a device address
- * and a name, which can be a human readable device name. nRF Logger application use the key to
+ * and a name, which can be a human-readable device name. nRF Logger application use the key to
  * group devices together. The logger session contains also the application name + optionally
  * a profile name. To create the session invoke
  * {@link #newSession(Context, String, String, String)} method.
@@ -110,7 +110,7 @@ import no.nordicsemi.android.log.annotation.LogMark;
  * Please use {@link LogContract} member classes to build Uris.
  * <p>
  * For every log session created on a new day for a single application (and optionally profile)
- * a special "date" session is created. It's number is equal to 0 and key to "!date".
+ * a special "date" session is created. Its number is equal to 0 and key to "!date".
  * To obtain a list of non-date sessions for a given application id sorted by date, key and time use:
  *
  * <pre>
@@ -160,7 +160,7 @@ public class Logger {
 	 *
 	 * @param context the context (activity, service or application).
 	 * @param key     the session key, which is used to group sessions.
-	 * @param name    the human readable session name.
+	 * @param name    the human-readable session name.
 	 * @return The {@link LogSession} that can be used to append log entries or <code>null</code>
 	 * if nRF Logger is not installed. The <code>null</code> value can be next passed to logging methods.
 	 */
@@ -177,7 +177,7 @@ public class Logger {
 	 * @param context the context (activity, service or application).
 	 * @param profile application profile which will be concatenated to the application name.
 	 * @param key     the session key, which is used to group sessions.
-	 * @param name    the human readable session name.
+	 * @param name    the human-readable session name.
 	 * @return The {@link LogSession} that can be used to append log entries or <code>null</code>
 	 * if nRF Logger is not installed. The <code>null</code> value can be next passed to logging methods.
 	 */

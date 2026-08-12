@@ -38,7 +38,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 /**
- * The log session. This object can be created with the use of
+ * The log session.
+ * <p>
+ * This object can be created with the use of
  * {@link Logger#newSession(Context, String, String)} and is used to append new log entries to
  * the nRF Logger log.
  */
@@ -71,7 +73,7 @@ public class LogSession implements ILogSession {
 	}
 
 	/**
-	 * Returns the {@link Uri} that may by used to obtain all sessions created by the same
+	 * Returns the {@link Uri} that may be used to obtain all sessions created by the same
 	 * application (and the same profile) as this session. It may be used to open the list of
 	 * log sessions in the nRF Logger application or to obtain list of sessions using
 	 * {@link ContentProvider}. Keep in mind that sessions with {@link LogContract.Session#NUMBER}

@@ -40,11 +40,11 @@ import android.provider.BaseColumns;
 @SuppressWarnings({"WeakerAccess", "unused"})
 public class LogContract {
 	/**
-	 * The authority for the contacts provider.
+	 * The authority for the log provider.
 	 */
 	public static final String AUTHORITY = "no.nordicsemi.android.log";
 	/**
-	 * A content:// style uri to the authority for the log provider.
+	 * A <code>content://</code> style uri to the authority for the log provider.
 	 */
 	public static final Uri AUTHORITY_URI = Uri.parse("content://" + AUTHORITY);
 
@@ -74,7 +74,7 @@ public class LogContract {
 		 */
 		String KEY = "key";
 		/**
-		 * The human readable name of the session. This can be the device name.
+		 * The human-readable name of the session. This can be the device name.
 		 */
 		String NAME = "name";
 		/**
@@ -154,7 +154,7 @@ public class LogContract {
 		public static final String CONTENT_TYPE = "vnd.android.cursor.dir/no.nordicsemi.android.log.enties";
 
 		/**
-		 * The MIME type of a {@link Session#CONTENT_URI} subdirectory of a single log entry.
+		 * The MIME type of {@link Session#CONTENT_URI} subdirectory of a single log entry.
 		 */
 		public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/no.nordicsemi.android.log.entry";
 
@@ -201,6 +201,7 @@ public class LogContract {
 
 			/**
 			 * The Log {@link Level} and {@link android.util.Log} are not compatible.
+			 * <p>
 			 * Level has additional {@link #APPLICATION} level, while Log the
 			 * {@link android.util.Log#ASSERT}. Also, the {@link android.util.Log#WARN} has
 			 * the same value as {@link #INFO}. Therefore, a translation needs to be done to
@@ -270,8 +271,8 @@ public class LogContract {
 		public static final String APPLICATION_CONTENT_DIRECTORY = "application";
 
 		/**
-		 * The content:// style URI for log session table. Can be used directly for all sessions,
-		 * with session id (one or 0 sessions returned) or with content directories.
+		 * The <code>content://</code> style URI for log session table. Can be used directly for all
+		 * sessions, with session id (one or 0 sessions returned) or with content directories.
 		 */
 		public static final Uri CONTENT_URI = Uri.withAppendedPath(AUTHORITY_URI, SESSION_CONTENT_DIRECTORY);
 
@@ -320,7 +321,7 @@ public class LogContract {
 		public static final String CONTENT_TYPE = "vnd.android.cursor.dir/no.nordicsemi.android.log.sessions";
 
 		/**
-		 * The MIME type of a {@link #CONTENT_URI} subdirectory of a single log session.
+		 * The MIME type of {@link #CONTENT_URI} subdirectory of a single log session.
 		 */
 		public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/no.nordicsemi.android.log.session";
 
@@ -345,8 +346,8 @@ public class LogContract {
 		public static final String APPLICATION_CONTENT_DIRECTORY = "application";
 
 		/**
-		 * The content:// style URI for log application table. Can be used directly for all
-		 * applications or with appended id for single applications with given id.
+		 * The <code>content://</code> style URI for log application table. Can be used directly for
+		 * all applications or with appended id for single applications with given id.
 		 */
 		public static final Uri CONTENT_URI = Uri.withAppendedPath(AUTHORITY_URI, APPLICATION_CONTENT_DIRECTORY);
 
@@ -356,7 +357,7 @@ public class LogContract {
 		public static final String CONTENT_TYPE = "vnd.android.cursor.dir/no.nordicsemi.android.log.applications";
 
 		/**
-		 * The MIME type of a {@link #CONTENT_URI} sub-directory of a single application.
+		 * The MIME type of {@link #CONTENT_URI} subdirectory of a single application.
 		 */
 		public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/no.nordicsemi.android.log.application";
 	}

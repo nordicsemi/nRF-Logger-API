@@ -19,9 +19,11 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * A transaction for interacting with a articles provider. This is used to pass state around
- * throughout the operations comprising the transaction, including which databases the overall
- * transaction is involved in, and whether the operation being performed is a batch operation.
+ * A transaction for interacting with a log provider.
+ * <p>
+ * This is used to pass state around throughout the operations comprising the transaction,
+ * including which databases the overall transaction is involved in, and whether the operation
+ * being performed is a batch operation.
  */
 /* package */class LogTransaction {
 
